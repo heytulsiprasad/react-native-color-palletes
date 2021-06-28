@@ -7,9 +7,11 @@
     "ios": "react-native run-ios",
     "start": "react-native start",
     "test": "jest",
-    "lint": "eslint ."
+    "lint": "eslint .",
+    "flow": "flow ."
   },
   "dependencies": {
+    "flow-bin": "^0.137.0",
     "react": "17.0.1",
     "react-native": "0.64.2"
   },
