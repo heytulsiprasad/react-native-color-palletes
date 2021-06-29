@@ -1,5 +1,4 @@
 import React from 'react';
-import { Text } from 'react-native';
 import styled from 'styled-components';
 
 type Props = {
@@ -17,19 +16,24 @@ class ColorBox extends React.Component<Props> {
 
     return (
       <ColoredBox color={color}>
-        <Text>
+        <ColorText>
           {name} : {color}
-        </Text>
+        </ColorText>
       </ColoredBox>
     );
   }
 }
 
 const ColoredBox = styled.View`
-  padding: 10px;
+  padding: 20px;
   margin: 10px 0 10px 0;
   background-color: ${props => props.color};
   border-radius: 5px;
+`;
+
+const ColorText = styled.Text`
+  font-weight: bold;
+  color: #fff;
 `;
 
 export default ColorBox;
